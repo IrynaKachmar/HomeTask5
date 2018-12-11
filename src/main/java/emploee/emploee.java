@@ -12,7 +12,7 @@ public class emploee {
 	}
 	
 	public String toString() {
-		return "Name: "+this.name+" Position: "+this.position+" Salary: "+this.salary;
+		return "Name: "+this.name+"\t Position: "+this.position+"\t Salary: "+this.salary;
 	}
 	
 }
