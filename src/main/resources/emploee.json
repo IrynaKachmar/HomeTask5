@@ -1,22 +1,22 @@
 [
-	{"name":"Федоров",
-	 "position":"директор"
+	{"name":"Fedorov",
+	 "position":"dyrektor"
 	 "salary":"30000"
 	},
-	{"name":"Іванов",
-	 "position":"електрик"
+	{"name":"Ivanov",
+	 "position":"elektryk"
 	 "salary":"10000"
 	},
-	{"name":"Петров",
-	 "position":"вчитель"
+	{"name":"Petrov",
+	 "position":"vchytel"
 	 "salary":"20000"
 	},
-	{"name":"Олена Володимирівна",
-	 "position":"вчитель"
+	{"name":"Olena Volodymyrivna",
+	 "position":"vchytel"
 	 "salary":"20000"
 	},
-	{"name":"Cидоров",
-	 "position":"завгосп"
+	{"name":"Cydorov",
+	 "position":"zavgosp"
 	 "salary":"12000"
 	}
 ]
