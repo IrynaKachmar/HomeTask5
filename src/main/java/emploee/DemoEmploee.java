@@ -2,6 +2,7 @@ package emploee;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class DemoEmploee {
 
@@ -11,7 +12,9 @@ public class DemoEmploee {
 		try 
 		{
 			ArrayList <emploee> arrayEmpl = ReaderFile.readFileToArray(pathFileToRead);
+			Collections.sort(arrayEmpl);
 			ReaderFile.arrayPrint(arrayEmpl);
+			
 		} 
 		catch (FileNotFoundException e) 
 		{	
