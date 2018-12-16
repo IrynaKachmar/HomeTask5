@@ -9,17 +9,14 @@ public class DemoEmploee {
 	public static void main(String[] args) {
 		String currentDir = System.getProperty("user.dir") + "/src/main/resources/";
 		String pathFileToRead = currentDir + "emploee.json";
-		try 
-		{
+		try {
 			ArrayList <emploee> arrayEmpl = ReaderFile.readFileToArray(pathFileToRead);
 			Collections.sort(arrayEmpl);
 			ReaderFile.arrayPrint(arrayEmpl);
-			
 		} 
-		catch (FileNotFoundException e) 
-		{	
+		catch (FileNotFoundException e) {	
 			e.printStackTrace();
 		}
-		
 	}
+
 }

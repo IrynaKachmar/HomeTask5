@@ -20,23 +20,30 @@ public class ReaderFile {
 		try {
 			Object obj = parser.parse(new FileReader(fileToRead));
 			JSONArray arr =  (JSONArray) obj;
-			
-			int i=0;
-			while (i<arr.size()) {
+
+			int i = 0;
+			while (i < arr.size()) {
 				JSONObject empl = (JSONObject) arr.get(i);
 				emploee p = new emploee((String) empl.get("name"), (String) empl.get("position"), (String) empl.get("salary"));
 				result.add(p);
-				
 				i++;
 			}	
 		}
-		catch(FileNotFoundException e) {e.printStackTrace();}
-		catch(IOException e) {e.printStackTrace();  }
-		catch(ParseException e) {e.printStackTrace();}
-		catch(Exception e) {e.printStackTrace();}
-		 
+		catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		catch(ParseException e) {
+			e.printStackTrace();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+
 		return result;
-	} 
+	}
 
 	public static void arrayPrint(ArrayList <emploee> e) {
 		for (emploee s : e) {

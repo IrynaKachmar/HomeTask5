@@ -12,19 +12,19 @@ public class emploee implements Comparable<emploee> {
 	}
 
 	public void setName(String name) {
-	    this.name = name;
+		this.name = name;
 	}
 
 	public String getName() {
-	    return name;
+		return name;
 	}
 
 	public int compareTo(emploee other) {
-        return name.compareTo(other.name);
+		return name.compareTo(other.name);
 	}
 
 	public String toString() {
-		return "Name: "+this.name+"\t Position: "+this.position+"\t Salary: "+this.salary;
+		return "Name: " + this.name + "\t Position: " + this.position + "\t Salary: " + this.salary;
 	}
 
 }
