@@ -11,16 +11,16 @@ public class DemoEmploee {
 	    String pathFileToRead = currentDir + "emploee.json";
 
 		try {
-		    ArrayList <emploee> arrayEmpl1 = ReaderFile.readFileToArray(pathFileToRead);
-		    Collections.sort(arrayEmpl1);
-	        System.out.println("List sorted by Name");
-		    ReaderFile.arrayPrint(arrayEmpl1);
-		    System.out.println();
+            ArrayList <emploee> arrayEmpl1 = ReaderFile.readFileToArray(pathFileToRead);
+            Collections.sort(arrayEmpl1);
+            System.out.println("List sorted by Name");
+            ReaderFile.arrayPrint(arrayEmpl1);
+            System.out.println();
 
-		    arrayEmpl1.sort(emploee.salaryComparator);
-		    System.out.println("List sorted by Salary");
-		    ReaderFile.arrayPrint(arrayEmpl1);
-		    System.out.println();
+            arrayEmpl1.sort(emploee.salaryComparator);
+            System.out.println("List sorted by Salary");
+            ReaderFile.arrayPrint(arrayEmpl1);
+            System.out.println();
 
             arrayEmpl1.sort(emploee.positionComparator);
             System.out.println("List sorted by Position");
